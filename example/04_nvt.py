@@ -7,7 +7,7 @@ import os
 
 atoms = read("traj/03_equilibration.traj", index = "-1")
 
-model = "models/mace_agnesi_small.model"
+model = "../../models/mace-mh-1.model"
 default_dtype = "float32"
 device = "cuda"
 calc = mace.MACECalculator(model_paths=model, default_dtype=default_dtype ,device=device, head="omat_pbe")

@@ -1,0 +1,6 @@
+#only works with cuda if cuda version is 13
+conda create -n ml python=3.14
+conda activate ml
+pip install --upgrade ase
+pip install mace-torch
+pip install notebook

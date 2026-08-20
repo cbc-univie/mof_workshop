@@ -1,7 +1,15 @@
-#only works with cuda if cuda version is 13
+#CUDA 13:
 conda create -n ml python=3.14
 conda activate ml
 pip install --upgrade ase
 pip install mace-torch
 pip install notebook
-conda install mdanalysis
+pip install mdanalysis
+
+#CUDA 12:
+conda create -n ml python=3.12
+conda activate ml
+python3 -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+python3 -m pip install mace-torch ase
+pip install notebook
+pip install mdanalysis

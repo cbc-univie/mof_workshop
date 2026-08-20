@@ -43,7 +43,7 @@ with Trajectory("traj/03_equilibration.traj", "w", atoms) as traj:
         ekin = atoms.get_kinetic_energy()
         epot = atoms.get_potential_energy()
         N = len(atoms)
-        T = 2.0 * ekin / (3.0 * N * units.kB)  # adjust ndof if you have constraints
+        T = 2.0 * ekin / (3.0 * N * units.kB)
         print(f"step={dyn.get_number_of_steps():4d}  Epot={epot:10.3f} eV  "
               f"Ekin={ekin:10.3f} eV  T={T:7.1f} K")
     dyn.attach(print_status, interval=report_interval)

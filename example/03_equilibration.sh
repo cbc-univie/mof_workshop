@@ -7,4 +7,4 @@ source /home/marion/miniconda3/bin/activate/ mlnew
 
 python 03_equilibration.py
 
-#sbatch -J "equi" -o out/equi.out 03_equilibration.sh
+#sbatch -J "equi" -o out/03_equilibration.out 03_equilibration.sh

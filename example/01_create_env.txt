@@ -4,3 +4,4 @@ conda activate ml
 pip install --upgrade ase
 pip install mace-torch
 pip install notebook
+conda install mdanalysis

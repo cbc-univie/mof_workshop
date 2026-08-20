@@ -7,4 +7,4 @@ source /home/marion/miniconda3/bin/activate/ mlnew
 
 python 04_nvt.py
 
-#sbatch -J "equi" -o out/equi.out 03_equilibration.sh
+#sbatch -J "nvt" -o out/nvt.out 04_nvt.sh
